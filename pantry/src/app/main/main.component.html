@@ -1,0 +1,18 @@
+<div class="container">
+<div style="width:100%;">
+    <div class="taskbar">
+ <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+        <mat-button-toggle value="Pantry" [routerLink]="'/main/pantry'">Pantry</mat-button-toggle>
+        <mat-button-toggle value="Recipes" [routerLink]="'/main/recipe'">Recipe</mat-button-toggle>       
+</mat-button-toggle-group>
+<a><mat-icon style="float:right;margin-left:15px;background-color: whitesmoke;" [routerLink]="['/login']">
+    logout</mat-icon>
+</a>
+    </div>
+    <div class="main">
+        <router-outlet></router-outlet>
+    </div>
+
+</div>
+
+</div>

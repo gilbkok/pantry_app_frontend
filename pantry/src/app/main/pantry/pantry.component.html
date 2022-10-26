@@ -1,0 +1,39 @@
+
+<div>
+    <h2>clik to add pantry Item</h2>
+    <mat-icon (click)="itemActionAdd()">add</mat-icon>
+    
+</div>
+<div>
+    <p style="text-align: center;"><strong>PANTRY ITEM LIST</strong></p>
+    <table class="zebra"> 
+        <col>
+        <col>
+        <col>
+        <col>
+        <thead> 
+        <tr> 
+            <th>Item id</th> 
+            <th>Item Name</th> 
+            <th>Item weight</th> 
+            <th>Total Calories</th>
+            <th>Images</th> 
+            <th>Actions</th>
+           
+            
+        </tr> 
+        </thead> 
+        <tbody> 
+        <tr *ngFor="let items of ItemList"> 
+            <td>{{items.pid}}</td> 
+            <td>{{items.iName}}</td> 
+            <td>{{items.weight}}</td> 
+            <td>{{items.tCalories}}</td>
+            <td><img src="{{items.image}}"></td>
+            <td><mat-icon (click)="itemOtherAction(items)">edit</mat-icon>
+                <mat-icon (click)="onDelete(items.pid)">delete</mat-icon>
+            </td> 
+        </tr> 
+     </tbody>
+     </table>
+</div>

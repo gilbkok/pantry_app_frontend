@@ -1,0 +1,23 @@
+.container{
+    height: auto;
+    width: 75%;
+    border: 2px solid;
+    display:flex;
+    margin:auto;
+   background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+   margin-top: 20px;
+}
+
+.taskbar{
+    height: auto;
+    width: 100%;
+    
+}
+
+.main{
+height: auto;
+width: 90%;
+background-color: beige;
+margin: 10px auto;
+padding: auto;
+}

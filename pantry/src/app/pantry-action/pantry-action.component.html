@@ -1,0 +1,18 @@
+<div class="container">
+    <h2 style="text-align:center ;">Adding pantry</h2>
+    <mat-form [formGroup]="pantryForm" >
+       
+        <input type="text" name="iname" formControlName="iName" placeholder="Item Name ...">
+        
+        <input type="number" name="weight" formControlName="weight" placeholder="Item weight ...">
+        
+        <input type="number" name="calories" formControlName="tCalories" placeholder="Total calories ...">
+       
+        <input type="file" name="image" formControlName="image" >
+        
+    </mat-form>
+    <mat-button-toggle-group>
+        <mat-button-toggle (click)="OnaddItem()">Add Item</mat-button-toggle>
+        <mat-button-toggle (click)="onEditItem()">Edit Item</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>

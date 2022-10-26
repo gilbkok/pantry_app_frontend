@@ -1,0 +1,13 @@
+
+<div class="container">
+<form [formGroup]="loginForm">
+    <input placeholder="firstName" formControlName="firstName">
+    <input placeholder="password" formControlName="password">
+</form>
+<mat-button-toggle-group>
+    <mat-button-toggle (click)="OnLogin()">Login</mat-button-toggle>
+    <br>
+    <mat-button-toggle (click)="OnRegister()">Register</mat-button-toggle>
+    <br>
+</mat-button-toggle-group>
+</div>

@@ -1,0 +1,14 @@
+ <mat-card class="example-card">
+    <mat-card-title >{{tabRecipeList.rName}}</mat-card-title>
+    <mat-card-title-group *ngFor="let i of itemByRecipeList.items" >
+        <img src="{{i.image}}" >
+    <mat-card-content>
+        {{i.iName}}
+    </mat-card-content>
+</mat-card-title-group>
+<mat-card-content>
+  {{itemByRecipeList.rSteps}}
+</mat-card-content>
+  </mat-card>
+
+

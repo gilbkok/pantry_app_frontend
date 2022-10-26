@@ -1,0 +1,50 @@
+.container{
+    width: 200px;
+    height: 60%;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    margin:100px auto;
+    padding:50px 20px 50px 20px;
+
+}
+
+input{
+border-top: 0px;
+border-left: 0px;
+border-right:0px;
+margin: 20px auto;
+height:40px;
+border-radius: 3px;
+}
+
+button{
+    border: solid;
+    
+}
+.title{
+    margin: auto;
+    color: #0a0c06;
+    text-align: center;
+}
+body {
+    font: normal medium/1.4 sans-serif;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+th, td {
+  padding: 0.25rem;
+  text-align: left;
+  border: 1px solid #ccc;
+}
+tbody tr:hover {
+  background: rgb(220, 245, 236);
+}
+
+::ng-deep #dialogRecipe{
+  padding: 0px!important;
+  box-shadow: none!important;
+  background: transparent!important;
+  max-height: 800px;
+  }

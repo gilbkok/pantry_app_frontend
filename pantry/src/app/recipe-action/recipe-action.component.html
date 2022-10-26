@@ -1,0 +1,15 @@
+
+<div class="container">
+    <h2 style="text-align:center ;">Adding recipe</h2>
+    <form [formGroup]="recipeForm">
+
+        <input type="text" name="rName" formControlName="rName" placeholder="Item Name ...">
+        <textarea type="text" name="rSteps" formControlName="rSteps" placeholder="Describe the steps"></textarea>
+        <input type="file" name="rImage" formControlName="rImage">
+
+    </form>
+    <mat-button-toggle-group>
+        <mat-button-toggle (click)="OnAddRecipe()">Add Item</mat-button-toggle>
+        <mat-button-toggle (click)="OnEditRecipe()">Edit Item</mat-button-toggle>
+    </mat-button-toggle-group>
+</div>

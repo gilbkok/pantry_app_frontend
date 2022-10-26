@@ -1,0 +1,38 @@
+ <div>
+    <h2>clik to add recipe</h2>
+    <mat-icon (click)="recipeActionAdd()">add</mat-icon>
+    
+</div>
+        <p style="text-align: center;"><strong>RECIPE LIST</strong></p>
+        <table class="zebra"> 
+            <col>
+            <col>
+            <col>
+            <col>
+            <thead> 
+            <tr> 
+                <th>id</th> 
+                <th>recipe Name</th>               
+                <th>Actions</th>
+                <th>Items</th>
+            </tr> 
+            </thead> 
+            <tbody> 
+            <tr *ngFor="let recipe of recipeList"> 
+                <td>{{recipe.rid}}</td> 
+                <td>{{recipe.rName}}</td> 
+                <td><mat-icon (click)="recipeOtherAction(recipe)">edit</mat-icon>
+                    <mat-icon (click)="onDeleteRecipe(recipe.rid)">delete</mat-icon>
+                </td>
+                
+                <td>
+                    <div>
+                      <h3><mat-icon (click)="recipeItemAdd(recipe)">add</mat-icon> Add items
+                       
+                    <mat-icon (click)="recipeDetail(recipe)">read_more</mat-icon> See Details</h3>
+                    </div>
+                 </td>
+         </tr> 
+         </tbody>
+         </table>
+   
